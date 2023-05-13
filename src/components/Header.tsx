@@ -1,11 +1,22 @@
-import styles from './Header.module.css';
+import styles from "./Header.module.css";
 
-const Header = () => {
-    return (
-        <header className={styles.header}>
-            <input type="text" placeholder="Search a Pokémon" />
-        </header>
-    );
-    };
+type headerProps = {
+  query: string;
+  setQuery: (query: string) => void;
+};
+
+const Header = ({ query, setQuery }: headerProps) => {
+  return (
+    <header className={styles.header}>
+      <input
+        className={styles.input}
+        type="text"
+        placeholder="Search a Pokémon"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+      />
+    </header>
+  );
+};
 
 export default Header;
