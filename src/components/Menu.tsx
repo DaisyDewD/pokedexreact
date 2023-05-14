@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PokemonsButton from "../assets/pikachu.png";
 import ItemsButton from "../assets/pokeball.png";
 import LocationButton from "../assets/pointer.png";
-import styles from "./Menu.module.css";
+import styles from "./menu.module.css";
 
 const Menu = () => {
   return (

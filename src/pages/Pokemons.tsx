@@ -2,6 +2,10 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Menu from '../components/Menu';
+import { Link } from 'react-router-dom';
+import styles from './pokemons.module.css';
+
+import bulbasaurPicture from '../assets/bulbasaur.gif';
 
 const Pokemons = () => {
   const [query, setQuery] = useState('')
@@ -10,7 +14,15 @@ const Pokemons = () => {
    <Header query={query} setQuery={setQuery}/>
     <Menu/>
     <main>
-    <h1>Pokemons</h1>
+    <nav>
+      <Link to= "/">
+       < img src ={bulbasaurPicture} alt="Bulbasaur" />
+<div>
+  <span>Bulbasaur</span>
+  <span>#001</span>
+</div>
+          </Link>
+    </nav>
     </main>
   </>
   )
