@@ -11,9 +11,9 @@
   --bg-color: #f5f5f5;
   --bg-gradient: linear-gradient(
     105deg,
-    rgb(233, 11, 59) 0%,
-    rgb(61, 3, 88) 50%,
-    rgb(8, 0, 44) 100%
+    rgb(8, 0, 44) 5%,
+    rgb(61, 3, 88) 30%,
+    rgb(233, 11, 59) 100%
   );
 
   --bg-border: linear-gradient(
