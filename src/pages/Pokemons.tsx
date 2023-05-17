@@ -15,9 +15,9 @@ const Pokemons = () => {
     <Menu/>
     <main>
     <nav>
-      <Link to= "/">
-       < img src ={bulbasaurPicture} alt="Bulbasaur" />
-<div>
+      <Link className={styles.listItem} to= "/">
+       < img className={styles.listItemIcon}src ={bulbasaurPicture} alt="Bulbasaur" />
+<div className={styles.listItemText}>
   <span>Bulbasaur</span>
   <span>#001</span>
 </div>
